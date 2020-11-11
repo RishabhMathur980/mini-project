@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.theme.css">
+        <script src="js/jquery.js"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script> 
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div class="wrapper">
+        <div class="box1">
+            <div class="search-image">
+                <button style="border: none; background-color:#fffafa;" onclick="display2()">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+
+        <div class="text1">
+            <a href="login.html" style="color:black; text-decoration-line: none; " > oberoi one</a>
+        </div>
+        <div class="text2">
+            <a href="login.html" style="color:black; text-decoration-line: none;"> TheO&MO Alliance</a>
+        </div>
+        <div class="text3">
+            <a href="login.html" style="color:black; text-decoration-line: none;">Contact Us</a>
+        </div>
+        <div class="oberoi-logo">
+            <img src="https://latteluxurynews.com/wp-content/uploads/2019/03/Oberoi-HotelsResorts-logo.jpg" alt="latteluxurynews.com" style="height:60px;width: 80px;">
+        </div>
+        <div class="text4">
+            <a href="login.html" style="color:black; text-decoration-line: none;"> Special Offers</a>
+        </div>
+        <div class="text5">
+            <a href="login.html" style="color:black; text-decoration-line: none;"> Experiences</a>
+        </div>
+        <div class="text6">
+            <a href="login.html" style="color:black; text-decoration-line: none;">Destinations</a>
+        </div>
+        
+        <div class="horizintal-line">
+            <button style="border: none; background-color:#fffafa;" onclick="display()">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.0DX3w_dgiawL6fUnav1lzAHaHa&pid=Api&P=0&w=300&h=300" alt="icon-icons.com"  style="height:20px;width: 20px;">
+        </button>
+        </div>
+        
+        <div class="search-text">
+            <input type="text" placeholder="search here..." id="test2" style="visibility: hidden;">
+        </div> 
+        <div class="horizintal-line-box" id="test" style="visibility: hidden;" >
+           <a onclick="displaynext()" >&#10094;</a><br><br>
+           <a id="option1">Website Home</a><br><hr><br>
+           <a id="option2">Oberoi One</a><br><hr><br>
+           <button id="option3" onmouseover="destination()" onmouseout="destination2()">Destinations<span> &#10095;</span></button><br><hr><br>
+           <button id="option4" onmouseover="offer()" onmouseout="offer2()">Special Offers <span > &#10095;</span></button><br><hr><br>
+           <button id="option5" onmouseover="experiences()" onmouseout="experiences2()">Experiences <span> &#10095;</span></button><br><hr><br>
+           <a id="option6">The O&MO Alliances</a><br><hr><br>
+           <a id="option7">Gift Card</a><br><hr><br>
+           <a id="option8">Gallery</a><br><hr><br>
+           <a id="option9">Awards</a><br><hr><br>
+           <a id="option10">Covid 19 Updates</a><br><hr><br>
+           <a id="option11">News</a><br><hr><br>
+           <a id="option12">About Us</a><br><hr>
+           <div class="icon13">
+            <a id="down" href="https://www.youtube.com/user/OberoiHotels" style="color:black"><i class="fa fa-youtube-play"></i></a>
+            </div>
+            <div class="icon14">
+                <a href="https://www.instagram.com/oberoihotels/" style="color:black"><i class="fa fa-instagram"></i>
+                </a>
+            </div>
+            <div class="icon15">
+                <a href="https://twitter.com/oberoihotels/" style="color:black"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="icon16">
+                <a href="https://www.facebook.com/OberoiHotels" style="color:black"><i class="fa fa-facebook"></i></a>
+            </div>
+           
+       </div>
+       <div class="destination" id="dest1" style="visibility: hidden;">
+        <span>Oberoi Hotels & Resorts   Our Alliance Partner - Mandarin Oriental</span><br>
+        <p>India</p><br>
+        <div class="des-text">Agra - The Oberoi Amarvilas<br><br>
+        Bengaluru - The Oberoi, Bengaluru<br><br>
+        Gurgaon - The Oberoi, Gurgaon<br><br>
+        Jaipur - The Oberoi Rajvilas<br><br>
+        Kerala - The Oberoi Vrinda, Luxury Kerala Cruiser<br><br>
+        Kolkata - The Oberoi Grand<br><br>
+        Mumbai - The Oberoi, Mumbai<br><br>
+        New Chandigarh - The Oberoi Sukhvilas Spa Resort<br><br></div>
+        <div class="straight-line"></div>
+       <div class="des-text2"> New Delhi - The Oberoi, New Delhi<br><br>
+        Ranthambhore - The Oberoi Vanyavilas Wildlife Resort<br><br>
+        Shimla - Wildflower Hall, An Oberoi Resort<br><br>
+        Shimla - The Oberoi Cecil<br><br>
+        Udaipur - The Oberoi Udaivilas<br></div>
+      </div>
+      <div class="experiences" id="exp" style="visibility: hidden;">
+        <div class="experience1"> 
+        <img src="./images/experience1.jpg">
+        <p>Forest Bathing</p>
+      </div> <div class="experience2">
+        <img src="./images/experience2.jpg">
+        <p>Dine</p>
+        <span>Under the Stars</span>
+      </div> <div class="experience3">
+        <img src="./images/experience3.jpg">
+        <p> A Dance<br>Paradise</p>
+      </div><div class="experience4"> 
+        <img src="./images/experience4.jpg">
+        <p>Garden</p>
+        <span>Tea Party</span>
+      </div></div>
+      <div class="special-offers" id="special" style="visibility: hidden;">
+        <div class="offer1"> 
+        <img src="./images/offers1.jpg">
+        <p>Limited Period Offer</p>
+      </div> <div class="offer2">
+        <img src="./images/offers2.jpg">
+        <p>Himalayan</p>
+        <span>Vacation</span>
+      </div> <div class="offer3">
+        <img src="./images/offers3.jpg">
+        <p> 50% Savings<br>on Site Stay</p>
+      </div><div class="offer4"> 
+        <img src="./images/offers4.jpg">
+        <p>Unforgettable</p>
+        <span>Holidays</span>
+      </div></div>
+    </div>
+        <div class="box2">
+        <div class="plus-sign">
+           <button style="border: none;">
+             <i class="fa fa-plus-circle"></i>
+           </button>
+        </div>   
+        <div class="availability">
+            <button class="availability2" style="border: none;">View Availability</button>
+        </div> 
+        <div class="rooms">
+            Room<select name="Room" style="border: none;">
+                <optgroup label="Rooms"></optgroup>
+                <option >01</option>
+                        <option>02</option>
+                        <option>03</option>
+            </select>
+        </div>
+        <div class="CheckIn">
+            Check-Out <input onclick="fn1()" id="date" type="text" placeholder="Date"> </div>
+        <div class="CheckOut">
+            Check-In <input onclick="fn2()" id="date2" type="text" placeholder="Date"> </div>
+        <div class="Branch">
+            <select name="Room" style="border: none;">
+                <option>Kolkata-The Oberoi Grand</option>
+                        <option>Mumbai-The Oberoi,Mumbai</option>
+                        <option>New Delhi-The Oberoi,New Delhi</option>
+                        <option>Udaipur-The Oberoi,Udaivilas</option>
+            </select>
+        </div>
+        </div>
+               
+         <!-- <div class="horizintal-line-box" id="test" style="visibility: hidden;" >
+            krnfkrlfnklrf 
+         </div>
+          -->
+         <br><br><br>
+         
+         <div class="intro-video">
+         <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="1528" height="500" type="text/html" src="https://www.youtube.com/embed/ZvAHk0Tojao?autoplay=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcodegenerator.com"><div><small><a href="https://youtubeembedcodegenerator.com/">www.youtubeembedcodegenerator.com</a></small></div><div><small><a href="https://www.wiisworld.com/">buy traffic for website cheap</a></small></div></iframe>
+        </div>
+        <!-- <div class="welcome">
+            <p>Good Afternoon. Welcome to Oberoi</p>  
+            </div> -->
+         <div class="down">
+          <a  href="#down" style="color: black; "><i class="fa fa-chevron-down"></i></a>
+        </div>
+         <br> 
+        <div class="explore">
+            <span id="up"><i> What</i> stirs the traveller in you?</span><br>
+            <p>An idyllic beach on a faraway island? Shopping for rare treasures in an ancient city?<br>
+           A picnic in the Himalayas? A leisurely cruise on the Nile or a jungle adventure?</p>
+        </div>
+        <br>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="./images/myslides1.jpg" style="width:100%">
+              <div class="text"><i>Luxury</i> Udaivilas</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="./images/myslides2.jpg" style="width:100%">
+              <div class="text"><i>Luxury</i> by the Lakeside</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="./images/myslides3.jpg" style="width:100%">
+              <div class="text"><i>Extravagent</i> Luxury</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="./images/myslides4.jpg" style="width:100%">
+                <div class="text"><i>The Oberoi</i> Mumbai</div>
+              </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div><br><br><br>
+           <div class="magazine">
+            <span>THE OBEROI MAGAZINE</span>
+            <p><i>Stories</i> to inspire new journeys</p>
+          </div>
+          <br>
+          <div class="slideshow-container1">
+
+            <div class="mySlides1 fade1">
+              <div class="numbertext1">1 / 4</div>
+              <img src="./images/myslides5.jpg" style="width:100%">
+              <div class="text">Exclusive Lifestyle and Travel</div>
+            </div>
+            
+            <div class="mySlides1 fade1">
+              <div class="numbertext1">2 / 4</div>
+              <img src="./images/myslides6.jpg" style="width:100%">
+              <div class="text"><i>The Oberoi</i> Zahra</div>
+            </div>
+            
+            <div class="mySlides1 fade1">
+              <div class="numbertext1">3 / 4</div>
+              <img src="./images/myslides7.jpg" style="width:100%">
+              <div class="text"><i>Best Location</i> for Pre Wedding Shoots</div>
+            </div>
+            <div class="mySlides1 fade1">
+                <div class="numbertext1">4 / 4</div>
+                <img src="./images/myslides8.jpg" style="width:100%">
+                <div class="text"><i>Historic </i>Sites</div>
+              </div>
+            <a class="prev1" onclick="plusSlides1(-1)">&#10094;</a>
+            <a class="next1" onclick="plusSlides1(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot1" onclick="currentSlide1(1)"></span> 
+              <span class="dot1" onclick="currentSlide1(2)"></span> 
+              <span class="dot1" onclick="currentSlide1(3)"></span> 
+              <span class="dot1" onclick="currentSlide1(4)"></span> 
+            </div> 
+            <br><br>
+            <div class="activities">
+                <span><i>Experiences</i> that linger, often forever.</span>
+<p>A barbeque under the stars?<br>
+A trek through a tropical paradise?</p>
+            </div><br>
+            <div class="slideshow-container3">
+
+                <div class="mySlides3 fade3">
+                  <div class="numbertext3">1 / 4</div>
+                  <img src="./images/myslides13.jpg" style="width:100%">
+                  <div class="text"><i>Forest</i> Bathing</div>
+                </div>
+                
+                <div class="mySlides3 fade3">
+                  <div class="numbertext3">2 / 4</div>
+                  <img src="./images/myslides14.jpg" style="width:100%">
+                  <div class="text"><i>Dine</i> Under the Stars</div>
+                </div>
+                
+                <div class="mySlides3 fade3">
+                  <div class="numbertext3">3 / 4</div>
+                  <img src="./images/myslides15.jpg" style="width:100%">
+                  <div class="text"><i>A Dance</i> Paradise</div>
+                </div>
+                <div class="mySlides3 fade3">
+                    <div class="numbertext3">4 / 4</div>
+                    <img src="./images/myslides16.jpg" style="width:100%">
+                    <div class="text"><i>Garden</i> Tea Party</div>
+                  </div>
+                <a class="prev3" onclick="plusSlides3(-1)">&#10094;</a>
+                <a class="next3" onclick="plusSlides3(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot3" onclick="currentSlide3(1)"></span> 
+                  <span class="dot3" onclick="currentSlide3(2)"></span> 
+                  <span class="dot3" onclick="currentSlide3(3)"></span> 
+                  <span class="dot3" onclick="currentSlide3(4)"></span> 
+                </div> 
+          <div class="myoberoi">
+         <span><i> Oberoi</i> by you.</span><br>
+          <p>Staying at the Oberoi, as captured by our guests.<br>
+        Share your own experiences with #MyOberoi.</p><br> 
+          </div>
+          <div class="slideshow-container2">
+
+            <div class="mySlides2 fade2">
+              <div class="numbertext2">1 / 4</div>
+              <img src="./images/myslides9.jpg" style="width:100%">
+              <div class="text"><i>Peaople</i> Matters</div>
+            </div>
+            
+            <div class="mySlides2 fade2">
+              <div class="numbertext2">2 / 4</div>
+              <img src="./images/myslides10.jpg" style="width:100%">
+              <div class="text"><i>The Oberoi</i> Experience</div>
+            </div>
+            
+            <div class="mySlides2 fade2">
+              <div class="numbertext2">3 / 4</div>
+              <img src="./images/myslides11.jpg" style="width:100%">
+              <div class="text"><i>The Luxury</i> Rooms and Suites</div>
+            </div>
+            <div class="mySlides2 fade2">
+                <div class="numbertext2">4 / 4</div>
+                <img src="./images/myslides12.jpg" style="width:100%">
+                <div class="text"><i>Palatial</i> Resorts</div>
+              </div>
+            <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+            <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot2" onclick="currentSlide2(1)"></span> 
+              <span class="dot2" onclick="currentSlide2(2)"></span> 
+              <span class="dot2" onclick="currentSlide2(3)"></span> 
+              <span class="dot2" onclick="currentSlide2(4)"></span> 
+            </div>
+            <br>
+          <div class="main-awards">
+          <div class="awards"><br>
+            <span><i><b>Recognition.</b></i></span><br>
+            <p>For which we thank our guests and our people.</p> 
+            </div>
+            <div class="allawards">
+            <a href="" style="color:brown; text-decoration-line: none;"> View All Awards &#10095;</a> 
+            </div>
+            <br><br>
+            <div class="awards1"><br>
+            <span> Top 25 Hotel Brands<br>
+            in the India (Ranked 3rd)<br>
+            <p>2020</p></span>
+            Travel + Leisure<br>
+            Best Awards
+            </div>
+            <div class="vartical-line1">
+                <img src="https://img.pngio.com/free-straight-line-icon-135474-download-straight-line-icon-135474-vertical-line-png-picture-640_752.jpg" alt="pngio.com" style="height:140px;width: 50px;">
+            </div>
+            <div class="awards2"><br>
+            <span> Hotel Group in India<br>
+           <p> 2019</p></span>
+            Telegraph Travel<br>
+            Awards, Rajasthan
+            </div>
+            <div class="vartical-line2">
+                <img src="https://img.pngio.com/free-straight-line-icon-135474-download-straight-line-icon-135474-vertical-line-png-picture-640_752.jpg" alt="pngio.com" style="height:140px;width: 50px;">
+            </div>
+            <div class="awards3"><br>
+            <span> 20 Hotel Brands<br>
+            in the India (Ranked 2nd)<br>
+            <p>2019</p></span>
+            Travel + Leisure<br>
+            India's Best Awards
+            </div>
+            <div class="vartical-line3">
+                <img src="https://img.pngio.com/free-straight-line-icon-135474-download-straight-line-icon-135474-vertical-line-png-picture-640_752.jpg" alt="pngio.com" style="height:140px;width: 50px;">
+            </div>
+            <div class="awards4"><br>
+            <span> Hotel Group in the World<br>
+            <p>2018</p></span>
+            Telegraph Travel<br>
+            Awards, Rajasthan
+            </div>
+            </div>
+            <br>
+            <br>
+            <br><br><br><br><br>
+            <div class="box4">
+              <hr>
+              <br><br><br>
+              <div class="box4A" >
+                Subscribe<br><br>
+                <i>Discover the latest stories and inspirations <br>from our world, right in your inbox.</i><br><br>
+                
+                Enter e-mail address
+               <hr>
+                Submit  &#10095;
+                <br><br>
+                 
+                Manage Reservations<br>
+              </div>
+              <br>
+              <div class="box4B">
+                News<br><br>
+                Press Room<br><br>
+                News and Media<br><br>
+                The Oberoi Magazine<br>
+              </div>
+              <br>
+              <div class="box4C">
+                More<br><br>
+                Social Responsibility<br><br>
+                Oberoi Aviation<br><br>
+                Gift Card<br><br>
+                Tariff<br><br>
+                Oberoi Connections<br>
+            </div>
+            <br>
+            <div class="icon1">
+            <a id="down" href="https://www.youtube.com/user/OberoiHotels" style="color:white;"><i class="fa fa-youtube-play"></i></a>
+            </div>
+            <div class="icon2">
+                <a href="https://www.instagram.com/oberoihotels/" style="color:white;"><i class="fa fa-instagram"></i>
+                </a>
+            </div>
+            <div class="icon3">
+                <a href="https://twitter.com/oberoihotels/" style="color:white;"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="icon4">
+                <a href="https://www.facebook.com/OberoiHotels" style="color:white;"><i class="fa fa-facebook"></i></a>
+            </div>
+            <br>
+            <div class="box4D">
+                About Us<br><br>
+                Our Story<br><br>
+                Awards<br><br>
+                Careers<br><br>
+                Contact Us<br><br>
+                Oberoi Centre of Learning and Development<br>
+            </div>
+            <br>
+            <div class="box4E">
+              <div class="box4EA">
+               <a href="#" style="color:white; text-decoration-line:none ;">Sitemap</a> 
+              </div>
+              <div class="vartical-line4">
+            </div>
+            <div class="box4EB"> 
+            <a href="#" style="color:white; text-decoration-line:none ;">Terms and Conditions</a>
+          </div>
+                <div class="vartical-line5">
+                </div>
+                <div class="box4EC">
+                <a href="#" style="color:white; text-decoration-line:none ;">Privacy Policy </a>
+            </div>
+          </div>
+            <div class="box4F">
+                <a href="#" style="color:white; text-decoration-line: none;">© 2020 Oberoi Hotels & Resorts</a>
+            </div>
+            <br><br>
+            </div>
+            <div class="up-icon">
+             <a  href="#up" style="color: white; "> <i class="fa fa-chevron-up"></i></a>
+            </div>
+    </div>
+    </body>
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
+</html>
+ 
